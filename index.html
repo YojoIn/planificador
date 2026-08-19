@@ -28,7 +28,7 @@ header{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;border
 <div class="modal" id="changem"><div class="box"><h2>🔑 Cambiar PIN</h2><form id="changef"><input class="pin" id="oldp" type="password" inputmode="numeric" maxlength="6" placeholder="PIN actual" required><input class="pin" id="newp" type="password" inputmode="numeric" maxlength="6" placeholder="Nuevo PIN" required><button class="blue">Cambiar</button></form></div></div>
 <input type="file" id="restorefile" accept=".json" hidden><div class="toast" id="toast"></div>
 <script>
-const URL="https://pcrattifgychsydbdkwm.supabase.co",KEY="sb_publishable_EXL_43pJFvg0a_0Hadj1GA__mgjINMW",H={apikey:KEY,Authorization:"Bearer "+KEY,"Content-Type":"application/json"};
+const URL="https://pcrattifgychsydbdkwm.supabase.co",KEY="sb_publishable_EXL_43pJFvg0a_0Hadj1GA__mgjINMW",H={apikey:KEY,"Content-Type":"application/json"};
 const R=URL+"/rest/v1",RPC=R+"/rpc",$=x=>document.getElementById(x);let pin=sessionStorage.getItem("adminPin")||"",S={incomes:[],expenses:[],tickets:[],incomeCategories:[],expenseCategories:[]};
 const mon=$("month"),d=new Date();mon.value=d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0");
 const esc=x=>String(x??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m])),money=x=>new Intl.NumberFormat("pt-BR",{style:"currency",currency:"BRL"}).format(+x||0);
