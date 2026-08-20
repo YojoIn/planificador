@@ -1,4 +1,15 @@
-# Presupuesto PWA V4.2 — GitHub Pages + Supabase
+# Presupuesto PWA V4.3
 
-Esta versión corrige el error **Invalid API key** de V4.1.
+Versión para GitHub Pages conectada a Supabase.
 
+Cambios V4.3:
+- Nombre visible: **Vale Alimentacion**.
+- Nuevo gráfico de **Cargas vs Descuentos** del Vale Alimentacion del mes seleccionado.
+- Las operaciones del vale ahora se muestran como Carga y Descuento.
+- Sección **Categorías** con botón Mostrar/Ocultar, oculta por defecto para ahorrar espacio en móviles.
+- Caché del Service Worker actualizado para forzar la nueva versión.
+
+Mantiene la conexión de Supabase y el PIN de administrador configurados en la V4.2.
+
+## Publicación
+Reemplaza los archivos del repositorio de GitHub Pages por los archivos de este paquete y espera a que GitHub Pages publique los cambios.
